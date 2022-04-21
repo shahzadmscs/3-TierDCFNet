@@ -11,7 +11,7 @@ This research aims to develop a CNN-based model for automatically identifying An
 •	We have developed a standalone RBC microscopic image dataset along with manually segmented ground truth images of both healthy and Anemic-RBCs under the supervision of a hematologist/pathologist for cross-match analysis.
 
 <p align="center">
-    <img src="./Figures/3TDCFNet_Archetecture.png" width="90%"/> <br />
+    <img src="3TDCFNet_Archetecture.png" width="90%"/> <br />
     <em> 
     Figure 2: Synaptic view of proposed 3-Tier CNN model. The 300x300x1 represents binary input while 300x300x3 represents RGB original image. Lable "Yes" means the training accuracy of the nth Tier is equal to the predefined threshold value. Then the output is given to the next Tier for further processing. The label "No" means the training accuracy of the nth Tier is not equal to the predefined threshold value. Then the output is given to the same Tier for more optimal feature selection. Tier-I includes the DenseNet model that receives input images of 300x300x3 and produces output 200x200x64. Tier-II is equipped with EfficeintNet to preserve semantic information and extract the features upto 100x100x128; Tier-III comprises ShuffleNet, which ensures high accuracy with less computational cost. 
     </em>
@@ -21,7 +21,7 @@ This research aims to develop a CNN-based model for automatically identifying An
 # Results
 
 <p align="center">
-    <img src="./Figures/confusion_matrix.png" width="80%"/> <br />
+    <img src="confusion_matrix.png" width="80%"/> <br />
     <em> 
     Figure 2: Confusion matrix of training, validation, and testing accuracies of Module-I classification.
     </em>
