@@ -20,9 +20,9 @@ This research aims to develop a CNN-based model for automatically identifying An
 ## Setup
 ```
     -Linux (Tested on Ubuntu 16.04)
-    -NVIDIA GPU (GTX1050 12 GB)
+    -NVIDIA GPU (GEFORCE RTX-3060 12 GB)
     -CUDA CuDNN (CPU mode and CUDA without CuDNN may work with minimal modification, but untested)
-    -Pytorch>=0.4.0
+    -Pytorch>=1.10
     -torchvision>=0.2.1
     -dominate>=2.3.1
     -visdom>=0.1.8.3
